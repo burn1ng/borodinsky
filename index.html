@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Borodinski Barbershop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+	<header>
+		<div class="layout-center-wrapper">
+			<ul class="header-menu">
+				<li><a class="active" href="#">Главная</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Прайс-лист</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="account-menu">
+				<a href="#" class="account-menu-enter">Войти</a>
+			</div>
+		</div>
+	</header>
+	<section class="main">
+		<div class="layout-center-wrapper">
+			<img src="img/logo.png" alt="" class="logo">
+			<ul class="features">
+				<li>
+					<div class="features-title">Быстро</div>
+					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной прически-минутки!</p>
+				</li>
+				<li>
+					<div class="features-title">Круто</div>
+					<p>Забудьте, как Вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
+				</li>
+				<li>
+					<div class="features-title">Дорого</div>
+					<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="content-wrapper">
+			<div class="content-left-column">
+				<div class="content-title">Новости</div>
+				<ul class="content-news">
+					<li>
+						<a href="#">Нам наконец-то завезли Jagermeister! Теперь вы можете пропустить стаканчик во время стрижки</a>
+						<span class="date">25 февраля 2017</span></li>
+					<li>
+						<a href="#">В нашей команде пополнение - Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и наград, пополнил наши стройные ряды</a>
+						<span class="date">20 февраля 2017</span>
+					</li>
+				</ul>
+				<div class="buttons">
+					<a href="#" class="btn btn-type-1">Все новости</a>
+				</div>					
+			</div>
+			<div class="content-right-column">
+				<div class="content-title">Фотогалерея</div>
+				<div class="content-gallery-slider">
+					<img class="content-gallery-slider-item active" src="pics/gallery-1.jpg" alt="">					
+					<img class="content-gallery-slider-item" src="pics/gallery-2.jpg" alt="">				
+					<img class="content-gallery-slider-item" src="pics/gallery-3.jpg" alt="">				
+					<img class="content-gallery-slider-item" src="pics/gallery-4.jpg" alt="">
+				</div>	
+				<div class="buttons">
+					<a href="#" class="btn btn-type-1 btn-prev">Назад</a>
+					<a href="#" class="btn btn-type-1 btn-next">Вперед</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="content">
+		<div class="content-wrapper">
+			<div class="content-left-column">
+				<div class="content-title">Контактная информация</div>
+				<p>
+					Barbershop &laquo;Borodinski&raquo;<br>
+					г. Минск, ул. Собаки Павлова, д.13<br>
+					Телефон +375(29) 355-10-80
+				</p>
+				<p>
+					Время работы: <br>
+					Пн - Пт: с 10:00 до 22:00 <br>
+					Сб - Вс: с 10:00 до 19:00
+				</p>
+				<div class="buttons">
+					<a href="#" class="btn btn-type-1">Как проехать</a>
+					<a href="#" class="btn btn-type-1">Обратная связь</a>
+				</div>
+			</div>
+			<div class="content-right-column">
+				<div class="content-title">Записаться</div>
+				<p>Укажите желаемую дату и мы свяжемся с Вами для подтверждения брони</p>
+				<form class="form-order" action="ajax.php">
+					<input type="text" name="order-date" placeholder="Дата" value="">
+					<input type="text" name="order-time" placeholder="Время" value="">
+					<input type="text" name="username" placeholder="Ваше имя" value="">
+					<input type="tel" name="usertel" placeholder="Ваш телефон" value="">
+					<input type="submit" class="btn btn-submit" value="Отправить">
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="layout-center-wrapper">
+			<address>
+				Barbershop &laquo;Borodinski&raquo;<br>
+				г. Минск, ул. Собаки Павлова, д.13<br>
+				Телефон +375(29) 355-10-80
+			</address>
+			<div class="social">
+				<span class="social-phraze">Давайте дружить!</span>
+				<ul class="social-buttons">
+					<li><a href="http://vk.com/" class="btn-social btn-social-vk"></a></li>
+					<li><a href="http://facebook.com" class="btn-social btn-social-fb"></a></li>
+					<li><a href="http://instagram.com" class="btn-social btn-social-inst"></a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<a href="#">&copy; Душков Андрей, 2017 год</a>
+			</div>
+		</div>
+	</footer>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+ <script>
+ 	$(function() {
+			$(".btn-next").click(function(e) {
+				e.preventDefault();
+				var activeItem = $(".content-gallery-slider-item.active");
+				var nextItem = activeItem.next();
+
+				activeItem.removeClass("active");
+				if (nextItem.length == 0) {
+					nextItem = $(".content-gallery-slider-item:first");
+				}
+				nextItem.addClass("active");							
+			});
+
+			$(".btn-prev").click(function(e) {
+				e.preventDefault();
+				var activeItem = $(".content-gallery-slider-item.active");
+				var prevItem = activeItem.prev();
+
+				activeItem.removeClass("active");
+				if (prevItem.length == 0) {
+					prevItem = $(".content-gallery-slider-item:last");
+				}
+				prevItem.addClass("active");							
+			});
+		});
+ </script>
+</body>
+</html>
