@@ -280,7 +280,7 @@ header .layout-center-wrapper:after {
 }
 
 .form-order {
-    padding-bottom: 40px;
+    padding-bottom: 15px;
     max-width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -313,6 +313,7 @@ input.btn-submit {
     left: 0;
     border: 0;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
