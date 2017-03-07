@@ -33,7 +33,7 @@
 					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной прически-минутки!</p>
 				</li>
 				<li>
-					<div class="features-title">Круто</div>
+					<div class="features-title">Круто, очень круто. Серьезно</div>
 					<p>Забудьте, как Вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
 				</li>
 				<li>
@@ -58,16 +58,16 @@
 				</ul>
 				<div class="buttons">
 					<a href="#" class="btn btn-type-1">Все новости</a>
-				</div>					
+				</div>
 			</div>
 			<div class="content-right-column">
 				<div class="content-title">Фотогалерея</div>
 				<div class="content-gallery-slider">
-					<img class="content-gallery-slider-item active" src="pics/gallery-1.jpg" alt="">					
-					<img class="content-gallery-slider-item" src="pics/gallery-2.jpg" alt="">				
-					<img class="content-gallery-slider-item" src="pics/gallery-3.jpg" alt="">				
+					<img class="content-gallery-slider-item active" src="pics/gallery-1.jpg" alt="">
+					<img class="content-gallery-slider-item" src="pics/gallery-2.jpg" alt="">
+					<img class="content-gallery-slider-item" src="pics/gallery-3.jpg" alt="">
 					<img class="content-gallery-slider-item" src="pics/gallery-4.jpg" alt="">
-				</div>	
+				</div>
 				<div class="buttons">
 					<a href="#" class="btn btn-type-1 btn-prev">Назад</a>
 					<a href="#" class="btn btn-type-1 btn-next">Вперед</a>
@@ -109,13 +109,13 @@
 	</section>
 	<footer>
 		<div class="layout-center-wrapper">
-			<address>
-				Barbershop &laquo;Borodinski&raquo;<br>
+			<div class="address">
+				<div class="footer-block-description">Barbershop &laquo;Borodinski&raquo;</div>
 				г. Минск, ул. Собаки Павлова, д.13<br>
 				Телефон +375(29) 355-10-80
-			</address>
+			</div>
 			<div class="social">
-				<span class="social-phraze">Давайте дружить!</span>
+				<div class="footer-block-description">Давайте дружить!</div>
 				<ul class="social-buttons">
 					<li><a href="http://vk.com/" class="btn-social btn-social-vk"></a></li>
 					<li><a href="http://facebook.com" class="btn-social btn-social-fb"></a></li>
@@ -123,7 +123,8 @@
 				</ul>
 			</div>
 			<div class="copyright">
-				<a href="#">&copy; Душков Андрей, 2017 год</a>
+				<div class="footer-block-description">Дизайн сайта:</div>
+				<a class="btn btn-copyright" href="#">andreidushkou.tech</a>
 			</div>
 		</div>
 	</footer>
@@ -142,7 +143,7 @@
 				if (nextItem.length == 0) {
 					nextItem = $(".content-gallery-slider-item:first");
 				}
-				nextItem.addClass("active");							
+				nextItem.addClass("active");
 			});
 
 			$(".btn-prev").click(function(e) {
@@ -154,7 +155,7 @@
 				if (prevItem.length == 0) {
 					prevItem = $(".content-gallery-slider-item:last");
 				}
-				prevItem.addClass("active");							
+				prevItem.addClass("active");
 			});
 		});
  </script>
