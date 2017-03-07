@@ -245,6 +245,11 @@ header .layout-center-wrapper:after {
         margin-left: 2.5%;
     }
 }
+@media (min-width: 769px) {
+    .btn-type-1:nth-child(odd) {
+        margin-right: 20px;
+    }
+}
 /*a.btn-type-1:first-of-type {
     margin-right: 20px;
 }*/
@@ -329,6 +334,10 @@ input.btn-submit {
     }
     .content-wrapper::before {
         display: none;
+    }
+    .content-news {
+        max-width: 300px;
+        margin: 0 auto;
     }
     .content-gallery-slider {
     max-width: 300px;
