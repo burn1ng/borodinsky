@@ -1,0 +1,85 @@
+body {
+	background: url(../img/main-section-back.jpg) repeat;
+	font-weight: bold;
+}
+body:before {
+	display: none;
+}
+header {
+	padding-bottom: 1px;
+	border-bottom: 3px solid #242424;
+}
+.page-content {
+	padding: 55px 0;
+}
+.page-title {
+	font-size: 30px;
+	line-height: 42px;	
+	margin-bottom: 20px;
+}
+.page-breadcrumbs {
+	font-size: 0;
+	margin-bottom: 60px;
+}
+.page-breadcrumbs-item {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 24px;
+}
+.page-breadcrumbs-item:not(:first-child):before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	margin: -3px 15px 0;
+	width: 6px;
+	height: 6px; 
+	background: #000;
+	transform: rotate(45deg);
+}
+.page-breadcrumbs a {
+	color: #000;	
+}
+.page-content-heading {
+	font-size: 48px;
+	line-height: 42px;
+	margin: 0 0 70px;
+	text-align: center;
+	overflow: hidden;
+}
+.page-content-heading span {
+	position: relative;
+	display: inline-block;
+}
+.page-content-heading span:before,
+.page-content-heading span:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	top: 50%;
+}
+.page-content-heading span:before {
+	right: 100%;
+	margin-right: 25px;
+}
+.page-content-heading span:after {	
+	left: 100%;
+	margin-left: 25px;
+}
+
+.layout-two-col-wrapper {
+	display: flex;
+}
+.layout-two-col-wrapper:not(:last-child) {
+	margin-bottom: 60px;
+}
+.half-page {
+	flex: 1;
+}
+
+.content-heading {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 35px;
+}
