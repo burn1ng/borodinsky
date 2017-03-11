@@ -162,7 +162,7 @@ label[for="nav-trigger"] {
     cursor: pointer;
     width: 30px;
     height: 24px;
-    visibility: hidden;
+    display: none;
     
 }
 label[for="nav-trigger"]:after {
@@ -264,7 +264,7 @@ body {
         display: block;
     }
 	label[for="nav-trigger"] {
-		visibility: visible;
+		display: block;
 	}
 }
 
