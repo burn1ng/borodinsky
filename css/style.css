@@ -303,8 +303,8 @@ header .layout-center-wrapper:after {
 input.btn-submit {
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
-    font-size: 14px;
     line-height: 40px;
+    height:40px; /*fix problem in iOS with appearance of this button*/
     font-weight: bold;
     padding: 0;
     width: 100%;
@@ -313,7 +313,12 @@ input.btn-submit {
     left: 0;
     border: 0;
     cursor: pointer;
-    margin-bottom: 0;
+    margin-bottom: 0;    
+}
+input[type="text"], input[type="submit"] {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
 }
 
 @media (max-width: 768px) {
