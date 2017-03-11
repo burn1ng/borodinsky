@@ -315,7 +315,10 @@ input.btn-submit {
     cursor: pointer;
     margin-bottom: 0;    
 }
-input[type="text"], input[type="submit"] {
+input[type="text"], 
+input[type="submit"],
+input[type="tel"],
+input[type="password"] {
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-webkit-appearance: none;
