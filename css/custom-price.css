@@ -1,6 +1,8 @@
 body {
 	background: url(../img/main-section-back.jpg) repeat;
-	font-weight: bold;
+	font-weight: bold;	
+	font-size: 14px;
+	line-height: 24px;
 }
 body:before {
 	display: none;
@@ -24,7 +26,6 @@ header {
 .page-breadcrumbs-item {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 24px;
 }
 .page-breadcrumbs-item:not(:first-child):before {
 	content: '';
@@ -67,7 +68,6 @@ header {
 	left: 100%;
 	margin-left: 25px;
 }
-
 .layout-two-col-wrapper {
 	display: flex;
 }
@@ -77,9 +77,67 @@ header {
 .half-page {
 	flex: 1;
 }
-
 .content-heading {
 	font-size: 24px;
 	line-height: 30px;
 	margin-bottom: 35px;
+}
+.brands-list {
+	
+}
+.brands-list li {	
+	position: relative;
+	padding-left: 20px;	
+}
+.brands-list li:before {
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    background: #000;
+    transform: rotate(45deg);
+}
+.brands-list li:not(:last-child) {
+	margin-bottom: 25px;
+}
+.price-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.price-table, .price-table td {
+	border: 2px solid #000;
+}
+.price-table td {
+	width: 50%;
+	padding: 14px 15px;
+}
+.price-table td:not(:first-child) {
+	text-align: center;
+}
+
+.price-page-info {
+	max-width: 80%;
+}
+
+@media (max-width: 768px) {
+	section {
+		text-align: center;
+	}
+	.layout-two-col-wrapper {
+		flex-direction: column;		
+	}
+	.price-page-info {
+		max-width: 100%;
+		text-align: justify;
+	}
+	.brands-list {
+		display: inline-block;
+	}
+	.half-page:nth-child(odd) {
+		margin-bottom: 30px;
+	}
 }
