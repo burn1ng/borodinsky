@@ -2,15 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>Borodinski Barbershop</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
-	<base href="https://burn1ng.github.io/borodinsky/">
+	<!-- <base href="https://burn1ng.github.io/borodinsky/"> -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
-	<header>
+<ul class="mobile-navigation">
+    <li class="nav-item"><a href="index.html">Главная</a></li>
+    <li class="nav-item"><a href="#">Информация</a></li>
+    <li class="nav-item"><a href="#">Новости</a></li>
+    <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
+    <li class="nav-item"><a href="#">Магазин</a></li>
+    <li class="nav-item"><a href="#">Контакты</a></li>
+</ul>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="hamburger hamburger--spring" tabindex="0"
+     aria-label="Menu" role="button" aria-controls="navigation">
+		<div class="hamburger-inner"></div>
+</label>
+<div class="sticky-header"></div>
+
+<div class="site-layout-wrap">
+    <header>
 		<div class="layout-center-wrapper">
 			<ul class="header-menu">
 				<li><a class="active" href="index.html">Главная</a></li>
@@ -129,6 +146,7 @@
 			</div>
 		</div>
 	</footer>
+</div>
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -159,6 +177,11 @@
 				prevItem.addClass("active");
 			});
 		});
+ 	var $hamburger = $(".hamburger");
+    	$hamburger.on("click", function(e) {
+    	$hamburger.toggleClass("is-active");
+    	// Do something else, like open/close menu
+  });
  </script>
 </body>
 </html>
