@@ -1,10 +1,10 @@
-body {
+.site-layout-wrap {
 	background: url(../img/main-section-back.jpg) repeat;
 	font-weight: bold;	
 	font-size: 14px;
 	line-height: 24px;
 }
-body:before {
+.site-layout-wrap:before {
 	display: none;
 }
 header {

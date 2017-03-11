@@ -128,6 +128,7 @@ header .layout-center-wrapper:after {
 	z-index: 1;
 	height: 100%;
 	max-width: 200px;	
+    display: none;
 }
 .mobile-navigation::before {
 	position: relative;
@@ -253,9 +254,15 @@ body {
 	header  {
     	display: none;
 	}
+    .site-layout-wrap {
+        padding-top: 50px;
+    }
 	.sticky-header {
 		display: block;
 	}
+    .mobile-navigation {
+        display: block;
+    }
 	label[for="nav-trigger"] {
 		visibility: visible;
 	}
