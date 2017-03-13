@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Прайс-лист | Borodinski Barbershop</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
-	<base href="https://burn1ng.github.io/borodinsky/">
+	<!-- <base href="https://burn1ng.github.io/borodinsky/"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom-price.css">
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 <ul class="mobile-navigation">
@@ -16,7 +16,7 @@
     <li class="nav-item"><a href="#">Информация</a></li>
     <li class="nav-item"><a href="#">Новости</a></li>
     <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
-    <li class="nav-item"><a href="#">Магазин</a></li>
+    <li class="nav-item"><a href="shop.html">Магазин</a></li>
     <li class="nav-item"><a href="#">Контакты</a></li>
 </ul>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -34,7 +34,7 @@
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Новости</a></li>
 				<li><a class="active" href="price.html">Прайс-лист</a></li>
-				<li><a href="#">Магазин</a></li>
+				<li><a href="shop.html">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<div class="account-menu">
@@ -111,5 +111,17 @@
 		</div>
 	</footer>
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script>
+ 	$(function() {
+		var $hamburger = $(".hamburger");
+		$hamburger.on("click", function(e) {
+			$hamburger.toggleClass("is-active");		
+		});
+	});
+ </script>
 </body>
 </html>

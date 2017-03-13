@@ -1,0 +1,134 @@
+.layout-shop-wrapper {
+	display: flex;
+}
+
+aside {
+	flex: 0 0 220px;
+	/*background: #ccc;*/
+	margin-right: 20px;
+}
+.sidebar-header {
+	font-size: 24px;
+	line-height: 42px;
+	margin-bottom: 30px;
+}
+.sidebar-brands {
+	margin-bottom: 40px;
+}
+.sidebar-brands p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.custom-checkbox:not(:checked),
+.custom-checkbox:checked {
+  position: absolute;
+  left: -9999px;
+}
+.custom-checkbox:not(:checked) + label,
+.custom-checkbox:checked + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  display: block;
+}
+
+.custom-checkbox:not(:checked) + label:before,
+.custom-checkbox:checked + label:before {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  left: 0; top: 2px;
+  width: 20px; height: 20px;
+  border: 2px solid #000;
+  background: transparent;/
+}
+
+.custom-checkbox:not(:checked) + label:after,
+.custom-checkbox:checked + label:after {
+  content: '✖';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000;
+  transition: all .2s;
+}
+.custom-checkbox:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.custom-checkbox:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sidebar-groups {
+	margin-bottom: 40px;
+}
+.sidebar-groups .btn-type-1 {
+	width: 100%;
+	text-align: left;
+	line-height: 24px;
+	padding: 8px 20px;
+	margin-bottom: 10px;
+}
+.sidebar-groups .btn-type-1.active {
+	background: #fff;
+	color: #000;
+}
+.sidebar-groups .btn-type-1.active:hover {
+	box-shadow: none;
+}
+.sidebar-groups .btn-type-1:last-child {
+	margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+	section {
+	    text-align: left;
+	}
+}
+@media (min-width: 769px) {
+	.btn-type-1:nth-child(odd) {
+	    margin-right: 0;
+	}
+}
+
+
+
+main {
+	flex: 1;	
+	/*background: grey;*/
+}
+.shop-items-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.shop-item-card {
+	flex: 0 0 220px;
+	background: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	margin-bottom: 20px;
+}
+.shop-item-description {
+	padding: 15px;
+}
+.shop-item-category, .shop-item-brand {
+	line-height: 18px;
+}
+.shop-item-price {
+	width: 100%;
+	margin-top: 15px;
+	line-height: 18px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	background: rgba(0,0,0,0.1);
+	color: #000;
+}
+.shop-item-price:hover {
+	background: #000;
+	color: #fff;
+
+}

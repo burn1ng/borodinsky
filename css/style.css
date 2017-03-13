@@ -15,6 +15,7 @@ ul {
 a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 ::-webkit-input-placeholder {font-family: 'PT Sans Narrow', sans-serif;color:black;font-size:14px;line-height: 24px;font-weight: bold;}

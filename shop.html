@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Магазин | Borodinski Barbershop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
+	<!-- <base href="https://burn1ng.github.io/borodinsky/"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom-price.css">
+	<link rel="stylesheet" href="css/custom-shop.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</head>
+<body>
+<ul class="mobile-navigation">
+    <li class="nav-item"><a href="index.html">Главная</a></li>
+    <li class="nav-item"><a href="#">Информация</a></li>
+    <li class="nav-item"><a href="#">Новости</a></li>
+    <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
+    <li class="nav-item"><a href="shop.html">Магазин</a></li>
+    <li class="nav-item"><a href="#">Контакты</a></li>
+</ul>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="hamburger hamburger--spring" tabindex="0"
+     aria-label="Menu" role="button" aria-controls="navigation">
+		<div class="hamburger-inner"></div>
+</label>
+<div class="sticky-header"></div>
+
+<div class="site-layout-wrap">
+	<header>
+		<div class="layout-center-wrapper">
+			<ul class="header-menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="price.html">Прайс-лист</a></li>
+				<li><a class="active" href="shop.html">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="account-menu">
+				<a href="#" class="account-menu-enter">Войти</a>
+			</div>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="layout-center-wrapper">
+			<div class="page-title">Barbershop Borodinsky &mdash; Магазин</div>
+			<ul class="page-breadcrumbs">
+				<li class="page-breadcrumbs-item"><a href="index.html">Главная</a></li>
+				<li class="page-breadcrumbs-item"><a href="shop.html">Магазин</a></li>
+				<li class="page-breadcrumbs-item"><a href="#">Средства для ухода бороды и усов</a></li>
+			</ul>
+			<div class="layout-shop-wrapper">
+				<aside>
+					<div class="sidebar-header">Производители:</div>
+					<form class="sidebar-brands" action="">
+						<p><input class="custom-checkbox" type="checkbox" id="brand1"><label for="brand1">Baxter of California</label></p>
+						<p><input class="custom-checkbox" type="checkbox" id="brand2"><label for="brand2">Mr Natty</label></p>
+						<p><input class="custom-checkbox" type="checkbox" id="brand3"><label for="brand3">Suavecito</label></p>
+						<p><input class="custom-checkbox" type="checkbox" id="brand4"><label for="brand4">Malin+Goetz</label></p>
+						<p><input class="custom-checkbox" type="checkbox" id="brand5"><label for="brand5">Murray’s</label></p>
+						<p><input class="custom-checkbox" type="checkbox" id="brand6"><label for="brand6">American Crew</label></p>
+					</form>
+					<div class="sidebar-header">Группы товаров:</div>
+					<div class="sidebar-groups">
+						<a href="#" class="btn btn-type-1">Бритвенные принадлежности</a>
+						<a href="#" class="btn btn-type-1 active">Средства для ухода бороды и усов</a>
+						<a href="#" class="btn btn-type-1">Аксессуары</a>
+					</div>
+
+				</aside>
+				<main>
+					<div class="shop-items-wrapper">
+						<div class="shop-item-card">
+							<img src="pics/shop-item-1.jpg" alt="" class="shop-item-image">
+							<div class="shop-item-description">
+								<div class="shop-item-category">Набор для путешествий</div>
+								<div class="shop-item-brand">Baxter of california</div>
+								<a class="btn shop-item-price">2900 РУБ.</a>
+							</div>
+						</div>
+						<div class="shop-item-card">
+							<img src="pics/shop-item-2.jpg" alt="" class="shop-item-image">
+							<div class="shop-item-description">
+								<div class="shop-item-category">Увлажняющий кондиционер</div>
+								<div class="shop-item-brand">Baxter of california</div>
+								<a class="btn shop-item-price">750 РУБ.</a>
+							</div>
+						</div>
+						<div class="shop-item-card">
+							<img src="pics/shop-item-3.jpg" alt="" class="shop-item-image">
+							<div class="shop-item-description">
+								<div class="shop-item-category">Гель для волос</div>
+								<div class="shop-item-brand">Sauvecito</div>
+								<a class="btn shop-item-price">290 РУБ.</a>
+							</div>
+						</div>
+						<div class="shop-item-card">
+							<img src="pics/shop-item-4.jpg" alt="" class="shop-item-image">
+							<div class="shop-item-description">
+								<div class="shop-item-category">Глина для укладки волос</div>
+								<div class="shop-item-brand">American crew</div>
+								<a class="btn shop-item-price">500 РУБ.</a>
+							</div>
+						</div>
+						<div class="shop-item-card">
+							<img src="pics/shop-item-5.jpg" alt="" class="shop-item-image">
+							<div class="shop-item-description">
+								<div class="shop-item-category">Гель для бритья</div>
+								<div class="shop-item-brand">American Crew</div>
+								<a class="btn shop-item-price">300 РУБ.</a>
+							</div>
+						</div>
+						<div class="shop-item-card">
+							<img src="pics/shop-item-6.jpg" alt="" class="shop-item-image">
+							<div class="shop-item-description">
+								<div class="shop-item-category">Набор для бритья</div>
+								<div class="shop-item-brand">Baxter of california</div>
+								<a class="btn shop-item-price">3900 РУБ.</a>
+							</div>
+						</div>
+					</div>					
+				</main>				
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="layout-center-wrapper">
+			<div class="address">
+				<div class="footer-block-description">Barbershop &laquo;Borodinski&raquo;</div>
+				г. Минск, ул. Собаки Павлова, д.13<br>
+				Телефон +375(29) 355-10-80
+			</div>
+			<div class="social">
+				<div class="footer-block-description">Давайте дружить!</div>
+				<ul class="social-buttons">
+					<li><a href="http://vk.com/burn1ng" target="_blank" class="btn-social btn-social-vk"></a></li>
+					<li><a href="http://facebook.com" target="_blank" class="btn-social btn-social-fb"></a></li>
+					<li><a href="http://instagram.com" target="_blank" class="btn-social btn-social-inst"></a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<div class="footer-block-description">Дизайн сайта:</div>
+				<a class="btn btn-copyright" href="http://andreidushkou.tech">andreidushkou.tech</a>
+			</div>
+		</div>
+	</footer>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+ <script>
+ 	$(function() {
+		var $hamburger = $(".hamburger");
+		$hamburger.on("click", function(e) {
+			$hamburger.toggleClass("is-active");		
+		});
+	});
+ </script>
+</body>
+</html>
