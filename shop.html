@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Магазин | Borodinski Barbershop</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
-	<base href="https://burn1ng.github.io/borodinsky/">
+	<!-- <base href="https://burn1ng.github.io/borodinsky/"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom-price.css">
 	<link rel="stylesheet" href="css/custom-shop.css">
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 </head>
@@ -51,7 +51,7 @@
 			<ul class="page-breadcrumbs">
 				<li class="page-breadcrumbs-item"><a href="index.html">Главная</a></li>
 				<li class="page-breadcrumbs-item"><a href="shop.html">Магазин</a></li>
-				<li class="page-breadcrumbs-item"><a href="#">Средства для ухода бороды и усов</a></li>
+				<li class="page-breadcrumbs-item"><a href="#">Бритвенные принадлежности</a></li>
 			</ul>
 			<div class="layout-shop-wrapper">
 				<aside>
@@ -67,7 +67,7 @@
 					<div class="sidebar-header">Группы товаров:</div>
 					<div class="sidebar-groups">
 						<a href="#" class="btn btn-type-2">Бритвенные принадлежности</a>
-						<a href="#" class="btn btn-type-2 active">Средства для ухода бороды и усов</a>
+						<a href="#" class="btn btn-type-2">Средства для ухода бороды и усов</a>
 						<a href="#" class="btn btn-type-2">Аксессуары</a>
 					</div>
 
@@ -124,14 +124,14 @@
 						</div>
 					</div>
 					<div class="layout-pagination-wrapper">
-						<a href="#" class="page-box">&laquo;</a>
+						<a href="#" class="page-box btn-prev">&laquo;</a>
 						<a href="#" class="page-box">1</a>
-						<a href="#" class="page-box active">2</a>
+						<a href="#" class="page-box">2</a>
 						<a href="#" class="page-box">3</a>
 						<a href="#" class="page-box">4</a>
 						<a href="#" class="page-box">5</a>
 						<a href="#" class="page-box">6</a>
-						<a href="#" class="page-box">&raquo;</a>
+						<a href="#" class="page-box btn-next">&raquo;</a>
 					</div>
 				</main>
 			</div>
@@ -163,13 +163,61 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
- <script>
+<script>
  	$(function() {
+		
+ 		$(".sidebar-groups").find('a:first-child').addClass('active'); //default active- 1st group
+ 		$(".sidebar-groups").children().click(function(e) {
+ 			e.preventDefault();
+ 			$(".sidebar-groups").children().removeClass('active'); //only 1 group for show
+ 			$(this).addClass('active');
+ 			$('.page-breadcrumbs').find('a:last').html( $(this).html() ); //push group to breadcrumb
+ 		});
+
+
+
+ 		$(".page-box:first").next().addClass('active');  		//default active- 1st page
+
+ 		$('.layout-pagination-wrapper').find('.page-box:not(:first):not(:last)').click(function(e) {
+ 			e.preventDefault();
+ 			$(this).parent().children().removeClass('active');
+ 			$(this).addClass('active');
+ 		});
+
+ 		$(".btn-next").click(function(e) {
+			e.preventDefault();
+			var activeItem = $(".page-box.active");
+			var nextItem = activeItem.next();
+			activeItem.removeClass("active");
+
+			if ( nextItem.next().length == 0 || nextItem.length == 0 ) {
+				nextItem = $(".page-box:first").next();
+			}
+
+			nextItem.addClass("active");
+		});
+
+		$(".btn-prev").click(function(e) {
+			e.preventDefault();
+			var activeItem = $(".page-box.active");
+			var prevItem = activeItem.prev();
+			activeItem.removeClass("active");
+
+			if ( prevItem.prev().length == 0 || prevItem.length == 0 ) {
+				prevItem = $(".page-box:last").prev();
+			}
+
+			prevItem.addClass("active");
+		});
+
+
+
+
 		var $hamburger = $(".hamburger");
 		$hamburger.on("click", function(e) {
 			$hamburger.toggleClass("is-active");
 		});
 	});
- </script>
+</script>
 </body>
 </html>
